@@ -1,0 +1,12 @@
+,ID,TEST_ID,TestCase,TYPE,PROJECT,EXEC_TYPE,TEST_STATUS,Cosine,Effort
+0,1,3009,STORAGE - Hazard C8 (24 Hours),1,1,1,1,1,1485
+1,2,616,STORAGE - Physical Drive Failure in a Raid Array,1,1,1,1,1,40
+2,19,3850,STORAGE - Active Health System Log - Basic Storage Data Check,1,1,2,1,1,45
+3,22,23284,STORAGE - OS Continuous Reboot,1,1,2,1,1,270
+4,23,137,STORAGE - OS Installation,1,1,2,1,1,50
+5,27,625,STORAGE - SAS-SATA Disk Drive LED Functionality,1,1,2,1,1,10
+6,40,604,STORAGE - Smart Array - Enclosure & Slot Identification,1,1,2,1,1,15
+7,62,26410,STORAGE - Agentless Management Data (iLO),1,1,2,1,1,60
+8,98,1000,STORAGE - Agents,1,1,2,0,1,60
+9,99,522,STORAGE - Review Events,1,1,2,0,1,30
+10,104,520,STORAGE - Smart Array - Create all supported Array types without spares,1,1,2,0,1,60

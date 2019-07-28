@@ -1,0 +1,102 @@
+[
+  {
+    "Cosine": "1",
+    "TestCase": "STORAGE - OS Installation"
+  },
+  {
+    "Cosine": "1",
+    "TestCase": "STORAGE - OS Continuous Reboot"
+  },
+  {
+    "Cosine": "1",
+    "TestCase": "STORAGE - SAS-SATA Disk Drive LED Functionality"
+  },
+  {
+    "Cosine": "1",
+    "TestCase": "STORAGE - Agents"
+  },
+  {
+    "Cosine": "1",
+    "TestCase": "STORAGE - Active Health System Log - Basic Storage Data Check"
+  },
+  {
+    "Cosine": "1",
+    "TestCase": "STORAGE - Agentless Management Data (iLO)"
+  },
+  {
+    "Cosine": "1",
+    "TestCase": "STORAGE - Review Events"
+  },
+  {
+    "Cosine": "1",
+    "TestCase": "STORAGE - Hazard C8 (24 Hours)"
+  },
+  {
+    "Cosine": "1",
+    "TestCase": "STORAGE - IO STRESS (24HRS)"
+  },
+  {
+    "Cosine": "1",
+    "TestCase": "STORAGE - Physical Drive Failure in a Raid Array"
+  },
+  {
+    "Cosine": "1",
+    "TestCase": "STORAGE - Smart Array - Enclosure & Slot Identification"
+  },
+  {
+    "Cosine": "1",
+    "TestCase": "STORAGE - Smart Array - Create all supported Array types without spares"
+  },
+  {
+    "Cosine": "0.24806946917841693",
+    "TestCase": "STORAGE - OS Continuous Reboot"
+  },
+  {
+    "Cosine": "0.22645540682891918",
+    "TestCase": "STORAGE - Driver Verifier (Windows Only)"
+  },
+  {
+    "Cosine": "0.20965696734438366",
+    "TestCase": "STORAGE - Device Driver Upgradation (Windows Only)"
+  },
+  {
+    "Cosine": "0.19611613513818402",
+    "TestCase": "STORAGE - Greater than 2tb partition OS installation"
+  },
+  {
+    "Cosine": "0.16012815380508716",
+    "TestCase": "STORAGE - Agents"
+  },
+  {
+    "Cosine": "0.12403473458920847",
+    "TestCase": "STORAGE - OS Continuous Reboot"
+  },
+  {
+    "Cosine": "0.12403473458920847",
+    "TestCase": "STORAGE - OS Continuous Reboot"
+  },
+  {
+    "Cosine": "0.11322770341445959",
+    "TestCase": "STORAGE - Hazard C8 (24 Hours)"
+  },
+  {
+    "Cosine": "0.10482848367219183",
+    "TestCase": "STORAGE - Smart Array - 2TB+ LUN Support"
+  },
+  {
+    "Cosine": "0.10482848367219183",
+    "TestCase": "STORAGE - Rpm Upgarde from DUD installation"
+  },
+  {
+    "Cosine": "0.10482848367219183",
+    "TestCase": "ESXI - CREATE VM ON LOCAL DISK"
+  },
+  {
+    "Cosine": "0.08770580193070293",
+    "TestCase": "STORAGE - HBA - OS Software RAID Drive Failure and Rebuild with Spare"
+  },
+  {
+    "Cosine": "0.08006407690254358",
+    "TestCase": "STORAGE - Active Health System Log - Basic Storage Data Check"
+  }
+]

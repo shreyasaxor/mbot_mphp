@@ -1,0 +1,13 @@
+TestCase,Cosine,Effort
+STORAGE - OS Installation,1,50
+STORAGE - OS Continuous Reboot,1,270
+STORAGE - SAS-SATA Disk Drive LED Functionality,1,10
+STORAGE - Agents,1,60
+STORAGE - Active Health System Log - Basic Storage Data Check,1,45
+STORAGE - Agentless Management Data (iLO),1,60
+STORAGE - Review Events,1,30
+STORAGE - Hazard C8 (24 Hours),1,1485
+STORAGE - IO STRESS (24HRS),1,60
+STORAGE - Physical Drive Failure in a Raid Array,1,40
+STORAGE - Smart Array - Enclosure & Slot Identification,1,15
+STORAGE - Smart Array - Create all supported Array types without spares,1,60

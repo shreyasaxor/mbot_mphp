@@ -1,0 +1,68 @@
+[
+  {
+    "Effort": "1485.0",
+    "TEST_ID": "82",
+    "TEST_STATUS": "0.962",
+    "TestCase": "STORAGE - Hazard C8 (24 Hours)"
+  },
+  {
+    "Effort": "40.0",
+    "TEST_ID": "125",
+    "TEST_STATUS": "0.992",
+    "TestCase": "STORAGE - Physical Drive Failure in a Raid Array"
+  },
+  {
+    "Effort": "45.0",
+    "TEST_ID": "114",
+    "TEST_STATUS": "0.998",
+    "TestCase": "STORAGE - Active Health System Log - Basic Storage Data Check"
+  },
+  {
+    "Effort": "270.0",
+    "TEST_ID": "34",
+    "TEST_STATUS": "1.0",
+    "TestCase": "STORAGE - OS Continuous Reboot"
+  },
+  {
+    "Effort": "50.0",
+    "TEST_ID": "19",
+    "TEST_STATUS": "0.9892499999999999",
+    "TestCase": "STORAGE - OS Installation"
+  },
+  {
+    "Effort": "10.0",
+    "TEST_ID": "129",
+    "TEST_STATUS": "1.0",
+    "TestCase": "STORAGE - SAS-SATA Disk Drive LED Functionality"
+  },
+  {
+    "Effort": "15.0",
+    "TEST_ID": "124",
+    "TEST_STATUS": "0.941",
+    "TestCase": "STORAGE - Smart Array - Enclosure & Slot Identification"
+  },
+  {
+    "Effort": "60.0",
+    "TEST_ID": "58",
+    "TEST_STATUS": "1.0",
+    "TestCase": "STORAGE - Agentless Management Data (iLO)"
+  },
+  {
+    "Effort": "60.0",
+    "TEST_ID": "0",
+    "TEST_STATUS": "0.395",
+    "TestCase": "STORAGE - Agents"
+  },
+  {
+    "Effort": "30.0",
+    "TEST_ID": "121",
+    "TEST_STATUS": "0.361",
+    "TestCase": "STORAGE - Review Events"
+  },
+  {
+    "Effort": "60.0",
+    "TEST_ID": "119",
+    "TEST_STATUS": "0.784",
+    "TestCase": "STORAGE - Smart Array - Create all supported Array types without spares"
+  }
+]

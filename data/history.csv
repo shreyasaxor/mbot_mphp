@@ -1,0 +1,144 @@
+ID,TEST_ID,TestCase,TYPE,PROJECT,EXEC_TYPE,TEST_STATUS
+1,3009,STORAGE - Hazard C8 (24 Hours),1,1,1,1
+2,616,STORAGE - Physical Drive Failure in a Raid Array,1,1,1,1
+3,916,STORAGE - Smart Array - 2TB+ LUN Support,1,1,1,1
+4,1093,STORAGE - Smart Array - Array Expansion,1,1,1,1
+6,524,STORAGE - Smart Array - Fail a logical drive(s),1,1,1,1
+7,521,STORAGE - Smart Array - Multiple Spare Functionality,1,1,1,1
+8,1082,STORAGE - Smart Array - RAID 60 Rebuild,1,1,1,1
+9,1092,STORAGE - Smart Array - Stripe Size Migration,1,1,1,1
+10,274,STORAGE + DotHill - Create all supported Array types without spares,1,1,1,1
+11,1105,STORAGE + DotHill - Dynamic Spare Functionality,1,1,1,1
+12,1113,STORAGE + DotHill - Expand RAID 5,1,1,1,1
+13,1115,STORAGE + DotHill - Expand RAID 6,1,1,1,1
+14,1104,STORAGE + DotHill - Local Spare Functionality,1,1,1,1
+15,275,STORAGE + DotHill - Map Volumes to Servers,1,1,1,1
+16,1073,STORAGE + DotHill - Review Events,1,1,1,1
+17,129,STORAGE + DotHill - Test Global Spares Functionality,1,1,1,1
+18,1106,STORAGE + DotHill - Verify Volume Copy Functionality,1,1,1,1
+19,3850,STORAGE - Active Health System Log - Basic Storage Data Check,1,1,2,1
+20,27889,STORAGE - Enhanced Reboot- Cold Boot,1,1,2,1
+21,319,STORAGE - IO Stress (24 Hours),1,1,2,1
+22,23284,STORAGE - OS Continuous Reboot,1,1,2,1
+23,137,STORAGE - OS Installation,1,1,2,1
+25,21859,STORAGE - RPI Verification,1,1,2,1
+26,519,STORAGE - RPM Upgrade from DUD installation,1,1,2,1
+27,625,STORAGE - SAS-SATA Disk Drive LED Functionality,1,1,2,1
+28,915,STORAGE - Slot & Bus Compatibility,1,1,2,1
+29,23307,STORAGE - Smart Array - Encryption Rekey,1,1,2,1
+30,23285,STORAGE - Smart Array - Flashback Cache Retention,1,1,2,1
+31,1079,STORAGE - Smart Array - Rebuild RAID 5,1,1,2,1
+32,2318,STORAGE - Smart Component flash,1,1,2,1
+33,23375,STORAGE - Split Mirror and Re-Mirror,1,1,2,1
+35,1475,STORAGE - Fail-Repair a Active Storage Path,1,1,2,1
+36,2970,STORAGE - Fail-Repair Active Controller - (SAS Dual Domain),1,1,2,1
+37,1443,STORAGE - JBOD - Fan+PS Redundancy test,1,1,2,0
+38,23612,STORAGE - JBOD SC - Dual Domain,1,1,2,1
+39,23609,STORAGE - JBOD SC - Online SPP,1,1,2,1
+40,604,STORAGE - Smart Array - Enclosure & Slot Identification,1,1,2,1
+41,84,Hyper-V - Create Virtual Machine,1,1,2,1
+42,3306,STORAGE - HBA - OS Software RAID Drive Failure and Rebuild,1,1,2,1
+43,3882,STORAGE - HBA - Physical Drive Failure,1,1,2,1
+44,1443,STORAGE - JBOD - Fan+PS Redundancy test,1,1,2,1
+45,1824,STORAGE - JBOD- Smart component,1,1,2,1
+46,24254,STORAGE - Smart Array - HBA-RAID Mode Switching,1,1,2,1
+47,2487,ESXi - Create VM on Local Disk,1,1,2,1
+48,3742,STORAGE - Agents - ESXi - CIM Provider - SMX SmartArray,1,1,2,1
+49,2181,STORAGE - ESX - Drive Failure & Notifications,1,1,2,1
+50,1081,STORAGE - Smart Array - RAID 50 Rebuild,1,1,1,1
+51,1078,STORAGE - Smart Array - Rebuild Raid 1(1+0),1,1,1,1
+52,1080,STORAGE - Smart Array - Rebuild RAID 6(ADG),1,1,1,1
+53,27890,STORAGE - IO Stress (72 Hours),1,1,1,1
+54,28459,STORAGE - SAS-SATA Disk Drive LED Functionality - ESXi,1,1,2,1
+55,3699,STORAGE - Hazard C8 (96 Hours),1,1,2,1
+56,23828,STORAGE - Greater than 2TB Partition OS Installation,1,1,2,1
+57,2597,STORAGE - JBOD - Hot Add to a switch,1,1,2,1
+58,3312,STORAGE - SSD Gas Gauge,1,1,2,1
+59,24257,STORAGE - SSD Smart Cache - Fail Write-Back Cache LUN,1,1,2,1
+60,24256,STORAGE - SSD Smart Cache - Switching Write Modes,1,1,2,1
+61,23611,STORAGE - JBOD SC - Single Domain,1,1,2,1
+62,26410,STORAGE - Agentless Management Data (iLO),1,1,2,1
+63,2868,STORAGE - JBOD - Drive Drawer Extension With IO,1,1,2,1
+64,1444,STORAGE - SAS switch - Fail and Repair Active SAS switch,1,1,2,1
+65,22194,STORAGE - Smart Array - SAS-SATA Stripe Size Migration,1,1,2,1
+66,24258,STORAGE - SSD Smart Cache - Rebuild Write-Back Cache LUN,1,1,2,1
+67,24259,STORAGE - SSD Smart Cache - Supported Physical Migration,1,1,2,1
+68,24260,STORAGE - SSD Smart Cache - Unsupported Physical Migration,1,1,2,1
+69,887,STORAGE - Device Driver upgrading (Windows only),1,1,2,1
+70,618,STORAGE - Driver Verifier (Windows only),1,1,2,1
+71,22650,STORAGE - Smart Array - Roaming Spare Functionality,1,1,2,1
+72,903,STORAGE - Tape - Agents,1,1,2,1
+73,902,STORAGE - Tape - Backup_Restore,1,1,2,1
+74,32198,STORAGE - A - Create RAID 5,1,1,2,1
+75,32201,STORAGE - A - Create RAID 60,1,1,2,1
+76,23097,STORAGE - h - Smart Array - SAS-SATA Stripe Size Migration,1,1,2,1
+77,998,STORAGE - Smart Array - Cache Data Retention,1,1,2,1
+78,29548,STORAGE - 12HR FIO Max Queue Depth,1,1,2,1
+79,21872,STORAGE - JBOD - Drive Migration from one External Storage Unit  to another same model External Storage Unit,1,1,2,1
+80,1111,STORAGE + DotHill - Expand RAID 10,1,1,2,1
+81,965,STORAGE + DotHill - Create RAID 1 & 6 without spares,1,1,2,1
+82,3307,STORAGE - HBA - OS Software RAID Drive Failure and Rebuild with Spare,1,1,2,1
+83,1114,STORAGE + DotHill - Expand RAID 50,1,1,2,1
+84,4098,SPP - Upgrade and Downgrade Testing,1,1,2,1
+85,29549,STORAGE - SSD Smart Cache - Max Capacity Smart Cache,1,1,2,1
+86,28222,STORAGE - SCSIe - NVMe Drive Link Check,1,1,2,1
+87,26074,STORAGE - SCSIe - Suprise Drive Removal,1,1,2,1
+88,28793,STORAGE - Max LUN test,1,1,2,1
+89,29852,STORAGE - Max Physical Drive in a LUN test,1,1,2,1
+90,24255,STORAGE - Smart Array - Cold Boot HBA mode with Arrays,1,1,2,1
+91,1435,STORAGE - VSM - Creating and Assigning Zone Groups,1,1,2,1
+92,1434,STORAGE - VSM - firmware flash,1,1,2,1
+93,1339,ESXi - Create VM using CD OS Media,1,1,2,1
+94,620,STORAGE - Hibernation (Windows only),1,1,2,1
+95,1475,STORAGE - Fail-Repair a Active Storage Path,1,1,2,0
+96,2970,STORAGE - Fail-Repair Active Controller - (SAS Dual Domain),1,1,2,0
+97,1824,STORAGE - JBOD- Smart component,1,1,2,0
+98,1000,STORAGE - Agents,1,1,2,0
+99,522,STORAGE - Review Events,1,1,2,0
+100,2668,STORAGE + DotHill - SAS RAID 5 Stripe Size Migration,1,1,2,1
+101,23609,STORAGE - JBOD SC - Online SPP,1,1,2,0
+102,2666,STORAGE + DotHill - SAS RAID 1+0 Stripe Size Migration,1,1,1,1
+103,3697,Hyper-V - Continuous Reboot,1,1,2,1
+104,520,STORAGE - Smart Array - Create all supported Array types without spares,1,1,2,0
+105,23610,STORAGE - JBOD SC - Offline SPP,1,1,2,1
+106,26073,STORAGE - SCSIe - Hot Add and Orderly Drive Removal,1,1,2,1
+107,26075,STORAGE - SCSIe - OS Software RAID Drive Failure and Rebuild,1,1,2,1
+108,26077,STORAGE - SCSIe - Physical Drive Failure,1,1,2,1
+109,32803,STORAGE - A - Acoustic - Random Create SATA,2,2,2,1
+110,32682,STORAGE - A - Create Hiwatt Lun,2,2,2,1
+111,32200,STORAGE - A - Create RAID 50,2,2,2,1
+112,32205,STORAGE - A - Delete ALL LUNs,2,2,2,1
+113,2798,STORAGE + DotHill - SAS Expand RAID 1+0,2,2,2,1
+114,32206,STORAGE - A - Delete Specific LUN,2,2,2,1
+115,32865,STORAGE - A - StandAloneIO-MixedBlockSize,2,2,2,1
+116,32223,STORAGE - A - Stripe Size Migration,2,2,2,1
+117,1101,STORAGE + DotHill - Controller FW Flash,2,2,2,1
+118,2670,STORAGE + DotHill - SAS Extend RAID 1,2,2,2,1
+119,32197,STORAGE - A - Create RAID 1,2,2,2,1
+120,32864,STORAGE - A - StandAloneIO-MixedBlockSizeUnaligned,2,2,2,1
+121,32195,STORAGE - A - Create RAID 0,2,2,2,1
+122,32127,STORAGE - JBOD - Power Cycling JBOD,2,2,2,1
+123,623,STORAGE - Smart Array - Migration and Compatibility,2,2,2,1
+124,32196,STORAGE - A - Create RAID 1+0adm,2,2,2,1
+125,28758,STORAGE - Encryption Options,2,2,2,1
+126,603,STORAGE - Slot Walking without Cache Data Retention,2,2,2,1
+127,2651,STORAGE + DotHill - SAS Create RAID 1+0,2,2,2,1
+128,2630,STORAGE - Smart Array - Automated Blackout Cache Data Retention,2,2,2,1
+129,2631,STORAGE - Smart Array - Automated Brownout Cache Data Retention,2,2,2,1
+130,32125,STORAGE - JBOD - Verify Link Speed Negotiation,2,2,2,1
+131,27893,STORAGE - Software RAID - Dynamic Smart Array Data LUN Migration (Pre-existing SA LUN),2,2,2,1
+132,30379,STORAGE - Synergy - Change LIG from Single Domain to Dual Domain,2,2,2,1
+133,32202,STORAGE - A - Create RAID Random,2,2,2,1
+134,1622,STORAGE - Smart Array - Flashback Cache Retention Slot Walk,2,2,2,1
+135,32802,STORAGE - A - Acoustic - Random Create,2,2,2,1
+136,2650,STORAGE + DotHill - SAS Create RAID 5,2,2,2,1
+137,32801,STORAGE - A - Acoustic - Random Create SAS,2,2,2,1
+138,32866,STORAGE - A - StandAloneIO-MediumQueueDepth,2,2,2,1
+139,32898,STORAGE - A - LUN Extend,2,2,2,1
+140,32897,STORAGE - A - Array Expansion,2,2,2,1
+141,28884,STORAGE - Synergy - Sanitize Drives after Logical JBOD delete,2,2,2,1
+142,28885,STORAGE - Synergy - Sanitize with SAS Switch Hotplug Interrupt,2,2,2,1
+143,30381,STORAGE - Synergy - SAS Switch FW Flash (Parallel),2,2,2,1
+144,4247,STORAGE - Hot Add Coasters Tanker Camaro and-or P2000 to C7000-C3000 Switch,2,2,2,1
+145,28886,STORAGE - Synergy - Sanitize with HDD Hotplug Interrupt,2,2,2,1
+146,30380,STORAGE - Synergy - SAS Switch FW Flash (Orchestrated),2,2,2,1
