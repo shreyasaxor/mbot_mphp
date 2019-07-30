@@ -10,9 +10,12 @@ import logging
 
 import email
 
-
+import requests
 from django.conf import settings
 from celery import shared_task
+from api.utils import chech_mail
+
+
 
 @shared_task
 def create_random_user_accounts():
@@ -51,6 +54,8 @@ def create_random_user_accounts():
                                         print(email_from)
                                         print(email_subject)
                                         print(email_body)
+                                        chech_mail(email_from,email_subject,email_body)
+
 
 
                             else:
@@ -70,3 +75,20 @@ def create_random_user_accounts():
         print(exc_type, fname, exc_tb.tb_lineno)
 
     return results
+
+
+
+from django.core.mail import EmailMessage
+
+
+from django.conf import settings
+from Dsproject.settings import EMAIL_HOST_USER
+import os
+
+from django.template.loader import render_to_string
+
+
+# @shared_task()
+
+
+
