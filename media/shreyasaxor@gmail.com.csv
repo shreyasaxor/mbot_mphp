@@ -1,12 +1,12 @@
 Effort,TEST_ID,TEST_STATUS,TestCase
-1485.0,82,1.0,STORAGE - Hazard C8 (24 Hours)
-40.0,125,0.997,STORAGE - Physical Drive Failure in a Raid Array
-45.0,114,0.997,STORAGE - Active Health System Log - Basic Storage Data Check
-270.0,34,0.9995,STORAGE - OS Continuous Reboot
-50.0,19,0.9939166666666668,STORAGE - OS Installation
+1485.0,82,0.931,STORAGE - Hazard C8 (24 Hours)
+40.0,125,0.998,STORAGE - Physical Drive Failure in a Raid Array
+45.0,114,1.0,STORAGE - Active Health System Log - Basic Storage Data Check
+270.0,34,1.0,STORAGE - OS Continuous Reboot
+50.0,19,0.9928333333333333,STORAGE - OS Installation
 10.0,129,1.0,STORAGE - SAS-SATA Disk Drive LED Functionality
-15.0,124,0.827,STORAGE - Smart Array - Enclosure & Slot Identification
+15.0,124,0.933,STORAGE - Smart Array - Enclosure & Slot Identification
 60.0,58,1.0,STORAGE - Agentless Management Data (iLO)
-60.0,0,0.344,STORAGE - Agents
-30.0,121,0.182,STORAGE - Review Events
-60.0,119,0.301,STORAGE - Smart Array - Create all supported Array types without spares
+60.0,0,0.3905,STORAGE - Agents
+30.0,121,0.359,STORAGE - Review Events
+60.0,119,0.841,STORAGE - Smart Array - Create all supported Array types without spares

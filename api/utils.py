@@ -59,7 +59,7 @@ def efforts_time(results):
     for x  in results:
         sum+=float(x['Effort'])
 
-    return sum
+    return sum/60
 
 
 
@@ -68,33 +68,31 @@ def efforts_time(results):
 
 
 
-def chech_mail(email_from,email_subject,email_body):
+def chech_mail(email_from,email_subject,email_body,mail_number):
 
     API_TEST="http://127.0.0.1:8000/testcase/"
 
     if(email_subject in 'test'):
         data = {"query":email_body,"include_common": "true"}
-        print(data,"datatatatttattatat <>>>>>>>>>>>>>>>>>>>")
-
         # sending post request and saving response as response object
         try:
             test_case = requests.post(url=API_TEST, data=data)
             print(test_case)
         except:
             import sys
-
             print(sys.exc_info())
         else:
-            print("dfdsfsdfsdfds tetststststststsing")
-            print(test_case.status_code)
+
             if test_case.status_code == 200:
-                print(test_case.json(),">>>>>>>>>>>>>>>")
-                print(test_case.text,"LLLLLLLLLLLL")
-
-
                 if create_csv(test_case.json(),email_from):
-                    time = efforts_time(test_case.json())/60
-                    _sendemail(email_from,time,email_from)
+                    time = efforts_time(test_case.json())
+                    ctx = {"name": "shreyas venkatramanappa", "hours": time, "link": "http://127.0.0.1:8000/media/" +email_from+'.csv'}
+                    print(ctx)
+                    msg_body = render_to_string('emailtemplate.html', ctx)
+
+                    reply_email = AutoReplyer(msg_body,email_from)
+                    reply_email.reply(mail_number)
+                    # _sendemail(email_from,time,email_from)
     #
     #
     # class YourAutoReplyer(AutoReplyer):
@@ -133,6 +131,7 @@ def chech_mail(email_from,email_subject,email_body):
 from email import message_from_bytes
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+from email.mime.application import MIMEApplication
 from email.utils import make_msgid
 from imaplib import IMAP4, IMAP4_SSL, IMAP4_PORT, IMAP4_SSL_PORT
 from smtplib import SMTP, SMTP_SSL, SMTP_PORT, SMTP_SSL_PORT
@@ -140,6 +139,7 @@ from subprocess import call
 from textwrap import dedent
 from time import sleep
 
+from os.path import basename
 
 __author__ = 'Bertrand Bordage'
 __copyright__ = 'Copyright © 2016 Bertrand Bordage'
@@ -153,25 +153,27 @@ class AutoReplyer:
     imap_use_ssl = True
     imap_port = IMAP4_PORT
     imap_ssl_port = IMAP4_SSL_PORT
-    imap_user = None
-    imap_password = None
+    imap_user = "shreyasaxor@gmail.com"
+    imap_password = "nivyashreyas9632636221"
 
-    smtp_server = None
-    smtp_use_ssl = False
+    smtp_server = "smtp.gmail.com"
+    smtp_use_ssl = True
     smtp_port = SMTP_PORT
     smtp_ssl_port = SMTP_SSL_PORT
-    smtp_user = None
-    smtp_password = None
+    smtp_user = "shreyasaxor@gmail.com"
+    smtp_password = "nivyashreyas9632636221"
 
-    from_address = None
-    body = None
-    body_html = None
+    from_address = "shreyasaxor@gmail.com bot"
+    body = "shreyas_tag"
+    body_html = ""
 
-    def __init__(self):
+    def __init__(self,msg_body,file_path):
+        self.body_html=msg_body
+        self.file_path=file_path
         if self.imap_use_ssl:
             self.imap = IMAP4_SSL(self.imap_server, self.imap_ssl_port)
         else:
-            self.imap = IMAP4(self.imap_server, self.imap_port)
+            self.   imap = IMAP4(self.imap_server, self.imap_port)
         self.imap.login(self.imap_user, self.imap_password)
         if self.smtp_use_ssl:
             self.smtp = SMTP_SSL(self.smtp_server, self.smtp_ssl_port)
@@ -184,22 +186,34 @@ class AutoReplyer:
         self.imap.logout()
 
     def create_auto_reply(self, original):
-        mail = MIMEMultipart('alternative')
-        mail['Message-ID'] = make_msgid()
-        mail['References'] = mail['In-Reply-To'] = original['Message-ID']
-        mail['Subject'] = 'Re: ' + original['Subject']
-        mail['From'] = self.from_address
-        mail['To'] = original['Reply-To'] or original['From']
-        mail.attach(MIMEText(dedent(self.body), 'plain'))
-        mail.attach(MIMEText(self.body_html, 'html'))
+        try:
+            mail = MIMEMultipart('alternative')
+            mail['Message-ID'] = make_msgid()
+            mail['References'] = mail['In-Reply-To'] = original['Message-ID']
+            mail['Subject'] = 'Re: ' + original['Subject']
+            mail['From'] = self.from_address
+            mail['To'] = original['Reply-To'] or original['From']
+            mail.attach(MIMEText(dedent(self.body), 'plain'))
+            mail.attach(MIMEText(self.body_html, 'html'))
+
+            # mail.attach(os.path.join(settings.MEDIA_ROOT,self.file_path + '.csv'))
+        except:
+            import sys
+            print(sys.exc_info(),"create_auto>>>>>>>>>>>>>>>>>>>>>>")
+
         return mail
 
     def send_auto_reply(self, original):
-        self.smtp.sendmail(
-            self.from_address, [original['From']],
-            self.create_auto_reply(original).as_bytes())
-        log = 'Replied to “%s” for the mail “%s”' % (original['From'],
-                                                     original['Subject'])
+        print(original,"originals><<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>")
+        try:
+            self.smtp.sendmail(
+                self.from_address, [original['From']],
+                self.create_auto_reply(original).as_bytes())
+            log = 'Replied to “%s” for the mail “%s”' % (original['From'],
+                                                         original['Subject'])
+        except:
+            import sys
+            print(sys.exc_info(),"")
         print(log)
         try:
             call(['notify-send', log])
@@ -208,8 +222,13 @@ class AutoReplyer:
 
     def reply(self, mail_number):
         self.imap.select(readonly=True)
-        _, data = self.imap.fetch(mail_number, '(RFC822)')
+        try:
+            _, data = self.imap.fetch(str(mail_number), '(RFC822)')
+        except:
+            import sys
+            print(sys.exc_info(),"?????????????????????")
         self.imap.close()
+        print(data[0][1],"data[0][1]data[0][1]data[0][1]data[0][1]data[0][1]data[0][1]")
         self.send_auto_reply(message_from_bytes(data[0][1]))
         self.imap.select(readonly=False)
         self.imap.store(mail_number, '+FLAGS', '\\Answered')

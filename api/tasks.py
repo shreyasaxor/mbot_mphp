@@ -54,7 +54,7 @@ def create_random_user_accounts():
                                         print(email_from)
                                         print(email_subject)
                                         print(email_body)
-                                        chech_mail(email_from,email_subject,email_body)
+                                        chech_mail(email_from,email_subject,email_body,i)
 
 
 

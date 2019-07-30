@@ -2,31 +2,31 @@
   {
     "Effort": "1485.0",
     "TEST_ID": "82",
-    "TEST_STATUS": "1.0",
+    "TEST_STATUS": "0.931",
     "TestCase": "STORAGE - Hazard C8 (24 Hours)"
   },
   {
     "Effort": "40.0",
     "TEST_ID": "125",
-    "TEST_STATUS": "0.997",
+    "TEST_STATUS": "0.998",
     "TestCase": "STORAGE - Physical Drive Failure in a Raid Array"
   },
   {
     "Effort": "45.0",
     "TEST_ID": "114",
-    "TEST_STATUS": "0.997",
+    "TEST_STATUS": "1.0",
     "TestCase": "STORAGE - Active Health System Log - Basic Storage Data Check"
   },
   {
     "Effort": "270.0",
     "TEST_ID": "34",
-    "TEST_STATUS": "0.9995",
+    "TEST_STATUS": "1.0",
     "TestCase": "STORAGE - OS Continuous Reboot"
   },
   {
     "Effort": "50.0",
     "TEST_ID": "19",
-    "TEST_STATUS": "0.9939166666666668",
+    "TEST_STATUS": "0.9928333333333333",
     "TestCase": "STORAGE - OS Installation"
   },
   {
@@ -38,7 +38,7 @@
   {
     "Effort": "15.0",
     "TEST_ID": "124",
-    "TEST_STATUS": "0.827",
+    "TEST_STATUS": "0.933",
     "TestCase": "STORAGE - Smart Array - Enclosure & Slot Identification"
   },
   {
@@ -50,19 +50,19 @@
   {
     "Effort": "60.0",
     "TEST_ID": "0",
-    "TEST_STATUS": "0.344",
+    "TEST_STATUS": "0.3905",
     "TestCase": "STORAGE - Agents"
   },
   {
     "Effort": "30.0",
     "TEST_ID": "121",
-    "TEST_STATUS": "0.182",
+    "TEST_STATUS": "0.359",
     "TestCase": "STORAGE - Review Events"
   },
   {
     "Effort": "60.0",
     "TEST_ID": "119",
-    "TEST_STATUS": "0.301",
+    "TEST_STATUS": "0.841",
     "TestCase": "STORAGE - Smart Array - Create all supported Array types without spares"
   }
 ]
