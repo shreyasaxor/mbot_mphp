@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a8b0782-15c2-4bd5-b2f9-f9e116e76b6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bower_components/image/feature-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dsproject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dsproject/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/celerybeat-schedule" beforeDir="false" afterPath="$PROJECT_DIR$/celerybeat-schedule" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/config_op.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/config_op.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/config_op.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/config_op.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/prediction_model_output.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/prediction_model_output.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/prediction_model_output.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/prediction_model_output.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/mycsvfile.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/names.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/shreyasaxor@gmail.com.csv" beforeDir="false" afterPath="$PROJECT_DIR$/media/shreyasaxor@gmail.com.csv" afterDir="false" />
-    </list>
+    <list default="true" id="9a8b0782-15c2-4bd5-b2f9-f9e116e76b6e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
