@@ -1,0 +1,12 @@
+TEST_ID,TestCase,Failure_Chance
+82,STORAGE - Hazard C8 (24 Hours),0.0%
+125,STORAGE - Physical Drive Failure in a Raid Array,0.6000000000000005%
+114,STORAGE - Active Health System Log - Basic Storage Data Check,0.20000000000000018%
+34,STORAGE - OS Continuous Reboot,0.5000000000000004%
+19,STORAGE - OS Installation,0.5600000000000049%
+129,STORAGE - SAS-SATA Disk Drive LED Functionality,0.0%
+124,STORAGE - Smart Array - Enclosure & Slot Identification,5.800000000000005%
+58,STORAGE - Agentless Management Data (iLO),0.0%
+0,STORAGE - Agents,62.2%
+121,STORAGE - Review Events,62.1%
+119,STORAGE - Smart Array - Create all supported Array types without spares,15.100000000000001%

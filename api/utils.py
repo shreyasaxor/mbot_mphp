@@ -7,7 +7,7 @@ from django.conf import settings
 from Dsproject.settings import EMAIL_HOST_USER
 import os
 import requests
-from django.template.loader import render_to_string
+from django.template.loader import render_to_string,get_template
 
 
 
@@ -40,12 +40,12 @@ def create_csv(results,filepath=None):
         with open('media/'+filepath+'.csv', 'w') as f:  # Just use 'w' mode in 3.x
 
 
-            writer = csv.DictWriter(f, fieldnames=["Effort", "TEST_ID", "TEST_STATUS","TestCase"])
+            writer = csv.DictWriter(f, fieldnames=[ "TEST_ID","TestCase","Failure_Chance"])
             writer.writeheader()
 
 
             for data in result_dict:
-                writer.writerow({'Effort': data['Effort'], 'TEST_ID': data['TEST_ID'], 'TEST_STATUS': data['TEST_STATUS'],"TestCase":data['TestCase']})
+                writer.writerow({'TEST_ID': data['TEST_ID'],"TestCase":data['TestCase'],"Failure_Chance":str((float(1)-float(data['TEST_STATUS']))*100)+'%'})
 
         f.close()
     except:
@@ -72,7 +72,7 @@ def chech_mail(email_from,email_subject,email_body,mail_number):
 
     API_TEST="http://127.0.0.1:8000/testcase/"
 
-    if(email_subject in 'test'):
+    if(email_subject in 'test' or email_subject in 'Test' ):
         data = {"query":email_body,"include_common": "true"}
         # sending post request and saving response as response object
         try:
@@ -86,9 +86,10 @@ def chech_mail(email_from,email_subject,email_body,mail_number):
             if test_case.status_code == 200:
                 if create_csv(test_case.json(),email_from):
                     time = efforts_time(test_case.json())
-                    ctx = {"name": "shreyas venkatramanappa", "hours": time, "link": "http://127.0.0.1:8000/media/" +email_from+'.csv'}
+                    ctx = {"name": email_from.split('@')[0], "hours": time, "link": "http://127.0.0.1:8000/media/" +email_from+'.csv'}
                     print(ctx)
-                    msg_body = render_to_string('emailtemplate.html', ctx)
+                    msg_body = render_to_string('name.html', ctx)
+                    # msg_body = get_template('emailtemplate.html')
 
                     reply_email = AutoReplyer(msg_body,email_from)
                     reply_email.reply(mail_number)
@@ -163,7 +164,7 @@ class AutoReplyer:
     smtp_user = "shreyasaxor@gmail.com"
     smtp_password = "nivyashreyas9632636221"
 
-    from_address = "shreyasaxor@gmail.com bot"
+    from_address = "shreyasaxor@gmail.com The Strat"
     body = "shreyas_tag"
     body_html = ""
 

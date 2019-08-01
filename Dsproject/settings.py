@@ -169,7 +169,7 @@ EMAIL_PORT= 587
 CELERY_BEAT_SCHEDULE = {
     'send-notification': {
          'task': 'api.tasks.create_random_user_accounts',
-         'schedule': timedelta(seconds=3)
+         'schedule': timedelta(seconds=30)
         },
 }
 
