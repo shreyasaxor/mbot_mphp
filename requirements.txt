@@ -1,4 +1,4 @@
-Django==2.1.7
+Django==2.2.13
 djangorestframework==3.9.2
 et-xmlfile==1.0.1
 jdcal==1.4
@@ -13,7 +13,7 @@ certifi==2019.3.9
 chardet==3.0.4
 coreapi==2.3.3
 coreschema==0.0.4
-Django==2.1.7
+Django==2.2.13
 djangorestframework==3.9.2
 et-xmlfile==1.0.1
 idna==2.8
@@ -41,7 +41,7 @@ certifi==2019.3.9
 chardet==3.0.4
 coreapi==2.3.3
 coreschema==0.0.4
-Django==2.1.7
+Django==2.2.13
 django-cors-headers==3.0.2
 djangorestframework==3.9.2
 et-xmlfile==1.0.1
