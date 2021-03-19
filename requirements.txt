@@ -1,5 +1,5 @@
 Django==2.1.7
-djangorestframework==3.9.2
+djangorestframework==3.11.2
 et-xmlfile==1.0.1
 jdcal==1.4
 numpy==1.16.2
@@ -14,7 +14,7 @@ chardet==3.0.4
 coreapi==2.3.3
 coreschema==0.0.4
 Django==2.1.7
-djangorestframework==3.9.2
+djangorestframework==3.11.2
 et-xmlfile==1.0.1
 idna==2.8
 itypes==1.1.0
@@ -43,7 +43,7 @@ coreapi==2.3.3
 coreschema==0.0.4
 Django==2.1.7
 django-cors-headers==3.0.2
-djangorestframework==3.9.2
+djangorestframework==3.11.2
 et-xmlfile==1.0.1
 idna==2.8
 itypes==1.1.0
