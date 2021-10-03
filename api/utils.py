@@ -155,7 +155,7 @@ class AutoReplyer:
     imap_port = IMAP4_PORT
     imap_ssl_port = IMAP4_SSL_PORT
     imap_user = "shreyasaxor@gmail.com"
-    imap_password = "nivyashreyas9632636221"
+    imap_password = ""
 
     smtp_server = "smtp.gmail.com"
     smtp_use_ssl = True
