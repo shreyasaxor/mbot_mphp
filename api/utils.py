@@ -162,7 +162,7 @@ class AutoReplyer:
     smtp_port = SMTP_PORT
     smtp_ssl_port = SMTP_SSL_PORT
     smtp_user = "shreyasaxor@gmail.com"
-    smtp_password = "nivyashreyas9632636221"
+    smtp_password = ""
 
     from_address = "shreyasaxor@gmail.com The Strat"
     body = "shreyas_tag"
